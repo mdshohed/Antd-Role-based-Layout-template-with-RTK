@@ -4,6 +4,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import { adminPaths } from "./admin.routes";
 import { routeGenerator } from "../utils/routesGenerator";
+import ProtectedRoute from "../components/layout/ProtectedRoute";
 
 
 const router = createBrowserRouter([

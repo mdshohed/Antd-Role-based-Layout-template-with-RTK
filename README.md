@@ -4,4 +4,5 @@
 - antd
 - @reduxjs/toolkit 
 - react-redux
-- 
+- jwt-decode
+- redux-persist
