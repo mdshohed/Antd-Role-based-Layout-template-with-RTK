@@ -1,7 +1,7 @@
 import AdminDashboard from "../pages/admin/AdminDashboard";
 import CreateAdmin from "../pages/admin/CreateAdmin";
+import CreateStudent from "../pages/student/CreateStudent";
 import CreateFaculty from "../pages/admin/CreateFaculty";
-import CreateStudent from "../pages/admin/CreateStudent";
 import AcademicSemester from "../pages/admin/academicManagement/AcademicSemester";
 
 
@@ -37,7 +37,12 @@ export const adminPaths = [
       {
         name: 'Create Student',
         path: 'create-student',
-        element: <CreateStudent/>
+        element: <CreateStudent />,
+      },
+      {
+        name: 'Create Member',
+        path: 'create-member',    
+        element: <CreateStudent />,
       },
     ],
   },
