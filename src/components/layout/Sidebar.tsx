@@ -1,3 +1,5 @@
+import { selectCurrentUser } from '../../redux/features/auth/authSlice';
+import { useAppSelector } from '../../redux/hooks';
 import { adminPaths } from '../../routes/admin.routes';
 import { sidebarItemsGenerator } from '../../utils/sidebarItemsGenerator';
 import { Layout, Menu } from 'antd';
@@ -11,10 +13,11 @@ const userRole = {
 }
 
 const Sidebar = () => {
-  const role = 'student'; 
+  const user = useAppSelector(selectCurrentUser);
+
   let sidebarItmes; 
 
-  switch(role){
+  switch(user!.role){
     case userRole.ADMIN: 
       sidebarItmes = sidebarItemsGenerator(adminPaths, userRole.ADMIN)
       break;
@@ -32,12 +35,12 @@ const Sidebar = () => {
     <Sider
         breakpoint="lg"
         collapsedWidth="0"
-        onBreakpoint={(broken) => {
-          console.log(broken);
-        }}
-        onCollapse={(collapsed, type) => {
-          console.log(collapsed, type);
-        }}
+        // onBreakpoint={(broken) => {
+        //   console.log(broken);
+        // }}
+        // onCollapse={(collapsed, type) => {
+        //   console.log(collapsed, type);
+        // }}
       >
         <div
           style={{
