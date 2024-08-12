@@ -6,3 +6,4 @@
 - react-redux
 - jwt-decode
 - redux-persist
+- sonner 

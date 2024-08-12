@@ -6,7 +6,6 @@ import { adminPaths } from "./admin.routes";
 import { routeGenerator } from "../utils/routesGenerator";
 import Home from "../pages/Home";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
