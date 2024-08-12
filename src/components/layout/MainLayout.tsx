@@ -57,7 +57,7 @@ const MainLayout = () => {
           </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>
-          Ant Design ©{new Date().getFullYear()} Created by Ant UED
+          Ant Design ©{new Date().getFullYear()} Created by Shohedul Islam
         </Footer>
       </Layout>
     </Layout>
